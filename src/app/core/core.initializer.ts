@@ -13,7 +13,7 @@ export async function init(injector: Injector): Promise<void> {
   const i18n: TranslateService = injector.get(TranslateService);
 
   await config.load('app', 'assets/config/app-config.json');
-  const app = config.app as AppConfig;
+  const app = config[`app`] as AppConfig;
 
   // Logging
   addSplashItem('Logging');

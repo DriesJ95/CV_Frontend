@@ -10,7 +10,7 @@ import { PropercasePipe } from './pipes/propercase.pipe';
 
 // Components
 import { PageHeaderComponent } from './components/page-header.component';
-
+import { ProfileComponent } from '../features/profile/profile.component';
 
 const MODULES: any[] = [
   CommonModule,

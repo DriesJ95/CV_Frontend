@@ -30,7 +30,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+              "src/styles.scss",
+              "node_modules/primeng/resources/themes/nova-light/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
             ],
             "scripts": [],
             "stylePreprocessorOptions": {
@@ -76,7 +82,8 @@
           "builder": "ngx-build-plus:dev-server",
           "options": {
             "browserTarget": "CVfrontend:build",
-            "extraWebpackConfig": "webpack.extra.js"
+            "extraWebpackConfig": "webpack.extra.js",
+            "proxyConfig": "proxy.conf.json"
           },
           "configurations": {
             "production": {
@@ -102,6 +109,8 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
               "src/styles.scss"
             ],
             "scripts": [],

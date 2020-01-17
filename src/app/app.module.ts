@@ -8,6 +8,10 @@ import { FeaturesModule } from './features/features.module';
 import { LayoutsModule } from './layouts/layouts.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {BsDatepickerModule, DatePickerComponent, DatepickerModule} from 'ngx-bootstrap';
+import {HttpClientModule} from '@angular/common/http';
+import {BrowserModule} from '@angular/platform-browser';
+import {ToastrModule} from 'ngx-toastr';
 
 
 const MODULES: any[] = [
@@ -15,7 +19,11 @@ const MODULES: any[] = [
   SharedModule,
   FeaturesModule,
   LayoutsModule,
-  AppRoutingModule
+  AppRoutingModule,
+  BsDatepickerModule.forRoot(),
+  BrowserModule,
+  HttpClientModule,
+  ToastrModule.forRoot()
 ];
 
 
